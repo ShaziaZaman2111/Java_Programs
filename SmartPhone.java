@@ -1,4 +1,13 @@
-
+/*
+create a class to represent a smart phone.
+ Create a class with appropriate name.
+ Add three attributes, that you think the most important for a smart phone.
+ Add a parameter less constructor to set the default values for each attribute.
+ Add a parameterized constructor to set the given values for each attribute. Use the concept of 
+‘Instance Variable Hiding’.
+ include a main method. Inside the main method, create three different object 
+of smart phone using different constructor (one with parameter-less, two with parameterized)
+*/
 public class SmartPhone {
 int modelNum;
 int ram;
