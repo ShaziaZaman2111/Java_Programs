@@ -1,8 +1,31 @@
-public class BillCalculator{
-double basicBill;
-double unit;
-double totalBill;
-double surcharge;
+/*
+Suppose that, an Electricity company charges its customers according to the different usage categories. In 
+In other words, the charge rate varies with the unit of usage. The basic charge is calculated with the 
+following rates:
+Unit Charge/unit
+upto 199 @1.20
+200 and above but less than 400 @1.50
+400 and above but less than 600 @1.80
+600 and above @2.00
+Additionally, if the bill exceeds tk. 400 then a surcharge of 15% will be charged. And finally, the minimum bill should be at least tk. 100/-, that is, if there is no usage or the bill is less than 100, the customer has to pay the minimum bill 100tk.
+Now, we will create a JAVA class to calculate the bill. Do the following tasks:
+ create a class BillCalculator 
+ add a method calculateBasicBill(double unit) that returns the basic bill according to the chart 
+above
+ add another method calculateSurcharge(double basicBill), that returns the amount of surcharge 
+the customer has to pay.
+ Add another method getTotalBill(double unit), that first calls the calculateBasicBill() method to 
+get the basic bill and then send it to the calculateSurcharge() method to get the amount of 
+surcharge. Finally, it will calculate the total bill and return it.
+ Inside the main, create an object of BillCalculator and print the bills for 25, 250, and 812 units of 
+usage
+*/
+	public class BillCalculator{
+	double basicBill;
+	double unit;
+	double totalBill;
+	double surcharge;
+
 	BillCalculator(double x){
 	unit=x;
 	double basicBill;
@@ -56,7 +79,7 @@ double surcharge;
 		return a+b;
 	    }
         //main function
-public static void main(String args[]){
+	public static void main(String args[]){
 		BillCalculator bill1, bill2, bill3;
 		bill1= new BillCalculator(25);
 		bill2= new BillCalculator(250);
