@@ -1,3 +1,36 @@
+/*
+Do the following tasks:
+write a JAVA class named Book with the attributes, mentioned here. Furthermore, add a method called 
+showInfo(), that prints a full description of the book object. This method should not return anything.
+ Add a main method.
+ Create three Book objects with the names: book1, book2, book3.
+ Set the following information accordingly:
+book1
+JAVA for Beginners 3rd edition
+By Prof. David
+537 pages
+Price: 299 tk
+Easy Coding Publications
+book2
+Omega Point 12th edition
+By Humayun Ahmed
+122 pages
+Price: 128 tk
+Shomoy Prokashoni
+book3
+Digital Fortress 5th edition
+By Dan Brown
+356 pages
+Price: 520 tk
+St. Martin Press
+ Call showInfo() method for all books.
+ Print the memory address of all objects.
+ Set book1 = book3.
+ Set the edition to 1 for book1.
+ Call showInfo() method for book3 again.
+ Print the memory address of all objects again.
+*/
+
 public class Book {
 String BookNo;	
 String Title;
@@ -67,6 +100,7 @@ public static void main(String args[]){
 		
 	book3.showInfo();
 	System.out.println("\n");
+	//printing memory address
 	System.out.println(book1);
 	System.out.println(book2);
 	System.out.println(book3);
